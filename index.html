@@ -1,0 +1,998 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Raunak Golden Ticket</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--whatsapp float-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+
+    <!-- auto popup -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#myModal").modal("show");
+      });
+    </script>
+
+    <!-- owl carousal -->
+    <!-- owl carousel css Link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PDXKM5L");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PDXKM5L"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="image/logo.png"
+            alt="Logo"
+            width="150"
+            height="80"
+            class="d-inline-block"
+            style="margin-left: 0.7em"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item nav-list">
+              <a
+                class="nav-link active text-uppercase"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item nav-list">
+              <a class="nav-link text-uppercase" href="#overview">Overview</a>
+            </li>
+            <li class="nav-item nav-list">
+              <a class="nav-link text-uppercase" href="#infra">Infra</a>
+            </li>
+            <li class="nav-item nav-list">
+              <a class="nav-link text-uppercase" href="#Configuration"
+                >Configuration</a
+              >
+            </li>
+            <!-- <li class="nav-item nav-list">
+              <a class="nav-link text-uppercase" href="#gallery">Gallery</a>
+            </li> -->
+
+            <li class="nav-item nav-list">
+              <a class="nav-link text-uppercase" href="#location">Location</a>
+            </li>
+            <li class="nav-item nav-list">
+              <a class="nav-link text-uppercase" href="#amenities"
+                >Amenities
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8 col-12" style="padding: 0px; margin: 0px">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="image/y1.jpeg" class="d-block w-100" alt="..." />
+              </div>
+              <!-- <div class="carousel-item">
+                            <img src="img/y2.jpeg" class="d-block w-100" alt="...">
+                        </div> -->
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 text-center">
+          <h2 class="mb-3 banForm-h">DON'T MISS, ACT NOW!!!</h2>
+          <form action="thankyou.php" method="post" class="ban-form">
+            <div class="mb-3 auto-input banForm">
+              <input
+                name="first_name"
+                type="text"
+                class="form-control ban-input"
+                placeholder="Enter Name*"
+                required
+              />
+            </div>
+            <div class="mb-3 auto-input banForm">
+              <input
+                name="email"
+                type="email"
+                placeholder="Email*"
+                class="form-control ban-input"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                required
+              />
+            </div>
+            <div class="mb-3 auto-input banForm">
+              <input
+                name="Phone"
+                placeholder="Mobile Number*"
+                type="text"
+                class="form-control ban-input"
+                id="mobile-idsss"
+                pattern="[789][0-9]{9}"
+                required
+              />
+            </div>
+
+            <div class="mb-3 auto-input banForm">
+              <input type="checkbox" checked="checked" id="check" required />
+              Opt-in for receiving important information and updates on WhatsApp
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-primary autopopup-btn mt-3 text-uppercase"
+            >
+              Request A Call
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="Welcome-section container-fluid p-5 mt-5">
+      <div class="row">
+        <h2 class="text-center">A GLITTERING INVESTOR'S PARADISE</h2>
+        <div class="col-md-6">
+          <img
+            src="image/raunak-golden-ticket-kalyan-img-01.jpg"
+            class="img-fluid investor-paradise-img"
+            alt=""
+          />
+        </div>
+        <div class="col-md-6">
+          <h4>NEW AGE BUSINESS - NEW ADDRESS</h4>
+          <p>
+            Almost like Thane which was 10 years ago, Kalyan is at a point of a
+            major change socially and economically with humongous
+            infrastructural spending across all domains.
+          </p>
+          <p>
+            With large projects from the finest names in RE and a pan MMR
+            customer cognizance of the next big growth wave, this hot bed is set
+            to grow and manifold in the coming few years.
+          </p>
+          <p>
+            Fertile market serves as an investors paradise with lifestyle
+            options that come at a great value-for-money, allowing mega earnings
+            in short time.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="Welcome-section container-fluid">
+      <div class="container pt-5 pb-5">
+        <h1 class="text-center whiteCHeading text-uppercase mb-3">
+          <b>Witness Grandeur: The Pinnacle of Address in Kalyan</b>
+        </h1>
+        <div class="row pt-3 pb-3">
+          <div class="col-md-3 col-6 sec-1 text-center">
+            <img
+              src="img/skyline.png"
+              alt=""
+              class=""
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            />
+            <p class="text-center">Get Connected To Current Conveniences</p>
+          </div>
+          <div class="col-md-3 col-6 sec-2 text-center">
+            <img
+              src="img/passenger.png"
+              alt=""
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            />
+            <p class="text-center">
+              Refresh And Rejuvenate With A Touch Of Privacy
+            </p>
+          </div>
+          <div class="col-md-3 col-6 sec-3 text-center">
+            <img
+              src="img/location.png"
+              alt=""
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            />
+            <p class="text-center">
+              The Most Prestigious Office Address Is Available Now!
+            </p>
+          </div>
+          <div class="col-md-3 col-6 sec-4 text-center">
+            <img
+              src="img/elevator1.png"
+              alt=""
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            />
+            <p class="text-center" id="overview">
+              The grandest triple-heighted entrance lobby
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-12 col-md-6">
+            <h3 class="text-uppercase">
+              <b>Welcome To Ranuak Golden Ticket</b>
+            </h3>
+            <h5
+              style="font-family: 'Roboto', sans-serif; color: #57873c"
+              class="text-uppercase"
+            >
+              At Kalyan
+            </h5>
+            <p>
+              Introducing Raunak Golden Ticket Kalyan, a globally-inspired,
+              multi-faceted development that transcends boundaries. This
+              transformative project is poised to become a quintessential symbol
+              of the city's grandeur and excellence. With world-renowned experts
+              at the helm, Raunak Golden Ticket Kalyan is redefining urban
+              living through its meticulously crafted residential, commercial,
+              retail, and lifestyle offerings. Each facet of this iconic
+              development is thoughtfully designed to elevate the cityscape and
+              provide a seamless blend of functionality and luxury. Prepare to
+              witness a new standard of sophistication as Raunak Golden Ticket
+              Kalyan sets the stage for a vibrant, dynamic future, where
+              innovation meets elegance in every corner.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="image/g3.jpg" alt="Banner" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-5" id="infra">
+      <div class="container text-center">
+        <h2 class="text-uppercase">
+          <b>KALYAN - THE FOURTH & THE FINAL GROWTH CENTRE OF MMR</b>
+        </h2>
+        <h6 class="mb-5 roboto text-uppercase">
+          Kalyan at its inflection point due to major ongoing infrastructure
+          developments
+        </h6>
+        <div class="row mt-3 text-center">
+          <div class="col-md-4 col-12">
+            <img src="image/shop.jpeg" alt="" class="img-fluid" />
+            <h5 class="mt-3 roboto text-uppercase a-heading">
+              Upcoming 24 Km Taloja-Kalyan metro line
+            </h5>
+          </div>
+          <div class="col-md-4 col-12">
+            <img src="image/office.jpeg" alt="" class="img-fluid" />
+            <h5 class="mt-3 roboto text-uppercase a-heading">
+              6 lane bridge on Ulhas river
+            </h5>
+          </div>
+          <div class="col-md-4 col-12">
+            <img src="image/re.jpg" alt="" class="img-fluid" />
+            <h5 class="mt-3 roboto text-uppercase a-heading">
+              Proposed freeway from Airoli to Kalyan
+            </h5>
+          </div>
+        </div>
+        <img src="image/border.webp" alt="" width="300" class="img-fluid" />
+      </div>
+    </div>
+
+    <div class="container-fluid mb-5 mt-5" id="Configuration">
+      <h2 class="text-uppercase text-center"><b> Project Configuration</b></h2>
+      <h6 class="mb-3 roboto text-uppercase text-center">
+        Designed Especially for Your Perfect Lifestyle.
+      </h6>
+      <div class="container text-center">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Type</th>
+              <th scope="col">Carpet Area</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1 Bhk</td>
+              <td>370 - 435 Sq. ft</td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-primary connectivity-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  View Price
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>2 Bhk</td>
+              <td>490 Sq. ft</td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-primary connectivity-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  View Price
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- <div class="container-fluid mb-5 mt-5">
+      <div class="container text-center">
+        <h2 class="mb-3 text-uppercase" id="gallery">
+          <b
+            >Special amenities added to make living at-Tanishq more comfortable,
+            safer and convenient.</b
+          >
+        </h2>
+        <div class="owl-carousel owl-theme">
+          
+          <div class="item">
+            <img
+              src="img/g2.jpg"
+              class="d-block w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="img/g3.jpg"
+              class="d-block w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="img/g4.jpg"
+              class="d-block w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="img/g5.jpg"
+              class="d-block w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="img/g6.jpg"
+              class="d-block w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="img/g7.jpg"
+              class="d-block w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            />
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container-fluid location-section pt-5 pb-5" id="location">
+      <h1 class="text-center text-white whiteCHeading text text-uppercase">
+        <b>THE SMARTEST 'IN-CITY' TOWNSHIP OF KALYAN</b>
+      </h1>
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-12 col-lg-6">
+            <img src="image/location.jpg" alt="" class="img-fluid" />
+          </div>
+          <div class="col-12 col-lg-6 location-details-box">
+            <div class="location-detail mt-3 mb-3">
+              <img src="image/i1.png" alt="" class="img-fluid" />
+              <div class="location-txt">
+                <h4>Only 10 mins from Kalyan Station</h4>
+                <!-- <p>
+                  Discover the joy of living close to the serene Kala Talav. Our
+                  project is strategically positioned to make leisurely walks by
+                  the talav a daily ritual.
+                </p> -->
+              </div>
+            </div>
+            <div class="location-detail mt-3 mb-3">
+              <img src="image/i2.png" alt="" class="img-fluid" />
+              <div class="location-txt">
+                <h4>
+                  New 4 Lane roads leading to the project, better than the rest
+                  of Kalyan’s Infrastructure
+                </h4>
+                <!-- <p>
+                  Embrace hassle-free banking with multiple banks within a
+                  stone's throw from your doorstep. Your financial needs are
+                  just a short walk away, ensuring banking convenience.
+                </p> -->
+              </div>
+            </div>
+            <div class="location-detail mt-3 mb-3">
+              <img src="image/i3.png" alt="" class="img-fluid" />
+              <div class="location-txt">
+                <h4>
+                  Retail outlets just outside the development with all basic
+                  needs covered
+                </h4>
+                <!-- <p>
+                  Nurture your child's education with ease. Reputed schools in
+                  close proximity mean less time commuting and more quality time
+                  spent in academic pursuits.
+                </p> -->
+              </div>
+            </div>
+            <div class="location-detail mt-3 mb-3">
+              <img src="image/i4.png" alt="" class="img-fluid" />
+              <div class="location-txt">
+                <h4>
+                  Mumbai University Sub-centre, Birla College & School within 10
+                  mins
+                </h4>
+                <!-- <p>
+                  Experience seamless travel with Kalyan Railway Station just
+                  around the corner. Effortless commuting for work or leisure is
+                  now a reality.
+                </p> -->
+              </div>
+            </div>
+            <div class="location-detail mt-3 mb-3">
+              <img src="image/i4.png" alt="" class="img-fluid" />
+              <div class="location-txt">
+                <h4>
+                  Prominent schools like Don Bosco, St. Xaviers International,
+                  St. Lawrence International School nearby
+                </h4>
+                <!-- <p>
+                  Experience seamless travel with Kalyan Railway Station just
+                  around the corner. Effortless commuting for work or leisure is
+                  now a reality.
+                </p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <h5 class="text-white extra-p">
+          With our project, you not only find a home but a lifestyle that puts
+          convenience at the forefront. Welcome to a community where proximity
+          is not just a perk, but a way of life.
+        </h5> -->
+      </div>
+      <!-- <div class="container mt-5">
+        <h3 class="mb-3 whiteCHeading text-uppercase text-center">
+          <b>Convenient Location</b>
+        </h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-6 c1 text-center">
+              <ul style="list-style: none" class="mt-3 text-white">
+                <li>Birla College</li>
+                <li>Holy Cross School</li>
+                <li>Don Bosco School</li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-6 c2 text-center">
+              <ul style="list-style: none" class="mt-3 text-white">
+                <li>Kala Talao</li>
+                <li>Kalyan Railway Station</li>
+                <li>Kalyan Court</li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-6 c3 text-center">
+              <ul style="list-style: none" class="mt-3 text-white">
+                <li>HDFC Bank</li>
+                <li>PNB Bank</li>
+                <li>TJSB Bank</li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-6 c4 text-center" id="amenities">
+              <ul style="list-style: none" class="mt-3 text-white">
+                <li>Gurunanak School</li>
+                <li>Holy Cross Hospital</li>
+                <li>Registration Office</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <div class="container-fluid text-center pt-3 pb-3">
+      <h2 class="mt-3 mb-3 text-uppercase"><b>Amenities</b></h2>
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col-md-4 col-6 col-lg-2 d1">
+            <img src="image/lobby.png" alt="" class="img-fluid amenities-i" />
+            <p>Attractive Lobby</p>
+          </div>
+          <div class="col-md-4 col-6 col-lg-2 d2">
+            <img
+              src="image/buddhist-yoga-pose.png"
+              alt=""
+              class="img-fluid amenities-i"
+            />
+            <p>Yoga Room</p>
+          </div>
+          <div class="col-md-4 col-6 col-lg-2 d3">
+            <img src="image/confetti.png" alt="" class="img-fluid amenities-i" />
+            <p>Party Hall</p>
+          </div>
+          <div class="col-md-4 col-6 col-lg-2 d4">
+            <img src="image/swimming.png" alt="" class="img-fluid amenities-i" />
+            <p>Swimming Pool</p>
+          </div>
+          <div class="col-md-4 col-6 col-lg-2 d5">
+            <img src="image/jogging.png" alt="" class="img-fluid amenities-i" />
+            <p>Jogging Track</p>
+          </div>
+          <div class="col-md-4 col-6 col-lg-2 d6">
+            <img src="image/dumbbell.png" alt="" class="img-fluid amenities-i" />
+            <p>Open Air Gym</p>
+          </div>
+        </div>
+      </div>
+      <img src="image/border.webp" width="300" />
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 text-center mb-3">
+          <img
+            src="image/raunak-golden-ticket-kalyan-logo-m.png"
+            alt=""
+            width="200"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mob-center text-center">
+          <img
+            src="image/raunak-city-kalyan-slider1-mob.jpg"
+            alt=""
+            width="280"
+            class="img-fluid p-1"
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-12 col-12 my-auto dev-heading">
+              <p>
+                Raunak Group has been serving the residential needs of Mumbai,
+                Pune, Kalyan, and Thane since 1980. The group has created a
+                number of township projects, totaling to 4.8+ million square
+                feet and around 6.2 million square feet of development is
+                underway. The commitment to quality and the desire for designing
+                excellent homes has allowed the group to provide a lifetime of
+                enjoyment to their customers, garnering their respect and
+                goodwill. The group aims to exceed expectations in their current
+                and future endeavours by delivering exceptional housing
+                solutions and service quality, as well as developing magnificent
+                houses with contemporary amenities at a competitive pricing.
+              </p>
+            </div>
+          </div>
+          <div class="row mt-3 dev text-center">
+            <div class="col-3 dev1">
+              <h1>1980</h1>
+              <p>Since</p>
+            </div>
+            <div class="col-3 dev2">
+              <h1>59,58,787</h1>
+              <p>Sq. Ft. Delivered</p>
+            </div>
+            <div class="col-3 dev3">
+              <h1>149+</h1>
+              <p>Buildings Delivered</p>
+            </div>
+            <div class="col-3 dev4">
+              <h1>7,191+</h1>
+              <p>Homes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container-fluid text-center book p-1 mt-5">
+      <h1
+        class="whiteCHeading text-uppercase"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        <b>BOOKING NOW OPEN</b>
+      </h1>
+    </div> -->
+
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <!-- <div class="col-md-3 col-12 text-center">
+          <img src="img/scanner.png" alt="" class="img-fluid" width="120" />
+          <p>P51700048797</p>
+        </div> -->
+        <div class="col-md-12 col-12">
+          <p>
+            Disclaimer : The content is for information purposes only and does
+            not constitute an offer to avail of any service. Prices mentioned
+            are subject to change without notice and properties mentioned are
+            subject to availability. Images for representation purposes only.
+            This is the official website of they Official Media partner. We may
+            also send updates to the mobile number/email id registered with us.
+            All Rights Reserved.
+            <a href="privacy.html" target="_blank">Privacy Policy</a>
+          </p>
+        </div>
+        <!-- <div class="col-md-3 col-12 text-center">
+          <img
+            src="img/raunak-golden-ticket-kalyan-logo-m.png"
+            alt=""
+            width="150"
+            class="img-fluid"
+          />
+        </div> -->
+        <hr />
+        <div class="container text-center">
+          <p>© Copyright 2024. All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+
+    <!--whatsapp icon-->
+    <a
+      href="https://api.whatsapp.com/send?phone=+7038944789&text=Hi!%20I%20am%20Interested%20In%20Golden%20Ticket%20at%20Kalyan.%20Please%20Share%20Details."
+      class="float"
+      target="_blank"
+    >
+      <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <div id="mybutton">
+      <button class="feedback-call">
+        <a href="tel:+7038944789" class="nav-link"
+          ><i class="fa fa-phone m-1"></i>Call</a
+        >
+      </button>
+      <button class="feedback-whats">
+        <a
+          href="https://api.whatsapp.com/send?phone=+7038944789&text=Hi!%20I%20am%20Interested%20In%20Golden%20Ticket%20at%20Kalyan.%20Please%20Share%20Details."
+          class="nav-link"
+          target="_blank"
+          ><i class="fa fa-whatsapp m-1" aria-hidden="true"></i>WhatsApp</a
+        >
+      </button>
+      <button
+        class="feedback"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        class="btn btn-primary"
+      >
+        <i class="fa fa-envelope m-1"></i>Enquire
+      </button>
+    </div>
+
+    <div id="enquire">
+      <button
+        class="enquire-btn"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Enquire Now
+      </button>
+    </div>
+
+    <div id="brochure">
+      <button
+        class="brochure-btn"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Download Brochure
+      </button>
+    </div>
+
+    <!-- popup -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="border-bottom: none">
+            <h1 class="autopopup-h modal-title fs-5" id="exampleModalLabel">
+              Book Site Visit Now
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <form action="thankyou.php" method="post">
+              <div class="mb-3 auto-input">
+                <input
+                  name="first_name"
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Name"
+                  required
+                />
+              </div>
+              <div class="mb-3 auto-input">
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  required
+                />
+              </div>
+              <div class="mb-3 auto-input">
+                <input
+                  name="Phone"
+                  placeholder="Mobile Number"
+                  type="text"
+                  class="form-control"
+                  id="mobile-idsss"
+                  pattern="[789][0-9]{9}"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary autopopup-btn">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- automatic popup  -->
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-center" style="border-bottom: none">
+            <h5 class="modal-title autopopup-h">
+              Register Here And Avail The Best Offers!!
+              <span class="text-danger"></span>
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <form action="thankyou.php" method="post">
+              <div class="mb-3 auto-input">
+                <input
+                  name="first_name"
+                  type="text"
+                  class="form-control"
+                  placeholder="Name*"
+                  required
+                />
+              </div>
+              <div class="mb-3 auto-input">
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="Email*"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  required
+                />
+              </div>
+              <div class="mb-3 auto-input">
+                <input
+                  name="Phone"
+                  placeholder="Mobile Number*"
+                  type="text"
+                  class="form-control"
+                  id="mobile-idss"
+                  pattern="[789][0-9]{9}"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary autopopup-btn">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- J Query  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Owl Carosoule Js  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- owl carousal -->
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        dots: false,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
